@@ -1,0 +1,47 @@
+body{
+	background: #f0f0f0;
+}
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100vw;
+	height: 100vh;
+	background: #bdd8e8;
+}
+.card{
+    width: 22vw;
+	margin-top: 13vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background: white;
+	color: black;
+	border-radius: 5px;
+}
+.card img{
+	width: 20vw;
+	height: 20vw;
+	margin-top: 10px;
+	border-radius: 3px;
+}
+.card h5{
+	margin: 5px;
+
+}
+.card p{
+	color: grey;
+	font-size: 10px;
+}
+/* Media query for screen width smaller than 455px */
+@media only screen and (max-width: 455px) {
+  .card {
+    width: 90%; /* Card will occupy 90% of the screen width */
+  }
+  .card img {
+    width: 85%;
+    height: auto; /* Maintain aspect ratio */
+  }
+}
